@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calm Mind — короткі практики на основі КБТ, що допомагають повернути спокій за 1–5 хвилин.">
+    <title>Calm Mind — твій простір спокою</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link min-h-11" href="#main-content">Перейти до основного вмісту</a>
+    <div class="page min-w-0">
+        <header class="sticky top-0 z-50 w-full border-b border-purple-100 bg-white">
+            <div class="site-header__inner mx-auto flex min-w-0 max-w-7xl items-center justify-between gap-2 px-4 py-2">
+                <a href="#home" class="flex min-h-11 min-w-0 items-center gap-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    aria-label="Calm Mind — на головну">
+                    <img src="assets/icons/Logo.png" alt="Спокій розуму — Calm Mind" class="site-header__logo">
+                    <span class="whitespace-nowrap text-xl font-bold text-purple-900">Calm Mind</span>
+                </a>
+
+                <nav class="hidden items-center gap-2 text-sm font-medium text-slate-700 lg:gap-4 md:flex"
+                    aria-label="Головна навігація">
+                    <a href="#blog" class="inline-flex min-h-11 items-center px-2 transition-colors hover:text-purple-700">Статті</a>
+                    <a href="#contacts" class="inline-flex min-h-11 items-center px-2 transition-colors hover:text-purple-700">Контакти</a>
+                    <a href="#practices" class="inline-flex min-h-11 items-center px-2 transition-colors hover:text-purple-700">Деталі практик</a>
+                    <a href="#services" class="inline-flex min-h-11 items-center px-2 transition-colors hover:text-purple-700">Послуги</a>
+                </nav>
+
+                <a href="tel:1547"
+                    class="hidden min-h-11 items-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-center font-semibold text-white transition-colors hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 lg:inline-flex"
+                    aria-label="Зателефонувати на гарячу лінію психологічної допомоги 1547">
+                    <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                    <span>Мені зараз погано</span>
+                </a>
+
+                <button id="mobile-menu-toggle" type="button"
+                    class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg p-2 text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-500 md:hidden"
+                    aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+            <nav id="mobile-menu" class="hidden border-t border-purple-100 px-4 py-3 md:hidden"
+                aria-label="Мобільна навігація">
+                <div class="mx-auto flex max-w-7xl flex-col gap-1">
+                    <a href="#blog" class="flex min-h-11 items-center rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-purple-50">Статті</a>
+                    <a href="#contacts" class="flex min-h-11 items-center rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-purple-50">Контакти</a>
+                    <a href="#practices" class="flex min-h-11 items-center rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-purple-50">Деталі практик</a>
+                    <a href="#services" class="flex min-h-11 items-center rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-purple-50">Послуги</a>
+                    <a href="tel:1547"
+                        class="mt-2 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-center font-semibold text-white transition-colors hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 md:w-auto"
+                        aria-label="Зателефонувати на гарячу лінію психологічної допомоги 1547">
+                        <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                        <span>Мені зараз погано</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <aside class="mx-4 my-4 flex min-w-0 flex-col items-start justify-between gap-4 rounded-xl border border-purple-100 bg-purple-100 p-4 sm:flex-row sm:items-center md:mx-auto md:max-w-7xl md:p-6" aria-label="Термінова підтримка">
+            <p class="break-words font-semibold text-purple-950">Потрібна допомога просто зараз?</p>
+            <a class="inline-flex min-h-11 w-full items-center justify-center rounded-lg border border-purple-700 px-5 py-3 text-center font-semibold text-purple-800 transition-colors hover:bg-purple-200 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto"
+                href="#practice-breathing">Перейти до вправи</a>
+        </aside>
+
+        <main class="main-content min-w-0" id="main-content" tabindex="-1">
+            <section class="w-full overflow-hidden bg-purple-50/50 px-4 py-8 md:py-12 lg:py-16" id="home" aria-labelledby="hero-title">
+                <div class="mx-auto grid w-full min-w-0 max-w-7xl grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8 lg:gap-16">
+                    <div class="min-w-0">
+                        <p class="mb-2 break-words text-xs font-bold uppercase tracking-wider text-purple-800 sm:text-sm">
+                            Calm Mind — простір турботи про себе
+                        </p>
+                        <h1 class="mb-4 break-words text-2xl font-extrabold leading-tight text-purple-950 sm:text-3xl lg:text-4xl" id="hero-title">
+                            Поверни собі спокій за 1–5 хвилин
+                        </h1>
+                        <p class="mb-6 break-words text-base text-slate-600 sm:text-lg">
+                            Короткі практики на основі когнітивно-поведінкової терапії
+                        </p>
+                        <a href="#practice-breathing"
+                            class="inline-flex min-h-11 w-full max-w-full items-center justify-center rounded-xl bg-purple-700 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto">
+                            Перейти до вправи
+                        </a>
+                    </div>
+                    <div class="min-w-0">
+                        <img class="aspect-[4/3] w-full rounded-2xl object-cover md:aspect-square" src="assets/images/photo1.jpg"
+                            alt="Спокійний простір для відпочинку та відновлення">
+                    </div>
+                </div>
+            </section>
+
+            <section class="mx-auto my-8 max-w-7xl px-4 py-8 md:my-12 md:px-6 md:py-12 lg:px-8 lg:py-16" id="about" aria-labelledby="advantages-title">
+                <div class="mb-8 min-w-0 text-center">
+                    <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-purple-700">
+                        Турбота, якій можна довіряти
+                    </p>
+                    <h2 class="break-words text-2xl font-bold text-purple-950 sm:text-3xl lg:text-4xl" id="advantages-title">
+                        Чому це працює для тебе
+                    </h2>
+                </div>
+                <div class="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
+                    <article
+                        class="min-w-0 rounded-2xl border border-purple-100 bg-white p-4 shadow-sm transition-shadow hover:shadow-md md:p-6">
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-xl text-purple-700"
+                            aria-hidden="true">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3 class="mb-2 break-words text-lg font-bold text-purple-950">Повна анонімність</h3>
+                        <p class="break-words text-sm text-slate-600">Жодних імен чи акаунтів. Твоя історія залишається тільки твоєю.</p>
+                    </article>
+                    <article
+                        class="min-w-0 rounded-2xl border border-purple-100 bg-white p-4 shadow-sm transition-shadow hover:shadow-md md:p-6">
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-xl text-purple-700"
+                            aria-hidden="true">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="mb-2 break-words text-lg font-bold text-purple-950">Доказовий КБТ-підхід</h3>
+                        <p class="break-words text-sm text-slate-600">Практики, засновані на принципах когнітивно-поведінкової терапії.</p>
+                    </article>
+                    <article
+                        class="min-w-0 rounded-2xl border border-purple-100 bg-white p-4 shadow-sm transition-shadow hover:shadow-md md:p-6">
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-xl text-purple-700"
+                            aria-hidden="true">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <h3 class="mb-2 break-words text-lg font-bold text-purple-950">Робота без інтернету</h3>
+                        <p class="break-words text-sm text-slate-600">Підтримка поруч, навіть коли немає з’єднання.</p>
+                    </article>
+                    <article
+                        class="min-w-0 rounded-2xl border border-purple-100 bg-white p-4 shadow-sm transition-shadow hover:shadow-md md:p-6">
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-xl text-purple-700"
+                            aria-hidden="true">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3 class="mb-2 break-words text-lg font-bold text-purple-950">Доступ 24/7</h3>
+                        <p class="break-words text-sm text-slate-600">Обирай зручний момент для короткої практики.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mx-auto my-8 max-w-7xl rounded-2xl border border-purple-100 bg-white p-4 md:my-12 md:p-6 lg:p-8" id="practices" aria-labelledby="practices-title">
+                <div class="section-heading">
+                    <p class="tag">Короткі вправи для себе</p>
+                    <h2 class="mb-3 break-words text-2xl font-bold leading-tight text-purple-950 sm:text-3xl lg:text-4xl" id="practices-title">Твій інструмент спокою</h2>
+                </div>
+                <div class="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
+                    <article class="practice-card" id="practice-breathing">
+                        <div class="practice-card__visual practice-card__visual--breathing" aria-hidden="true"></div>
+                        <h3>Дихання</h3>
+                        <p>Зроби паузу та поверни увагу до дихання.</p>
+                    </article>
+                    <article class="practice-card" id="practice-grounding">
+                        <div class="practice-card__visual practice-card__visual--grounding" aria-hidden="true"></div>
+                        <h3>Заземлення</h3>
+                        <p>Відчуй опору та поміть, що відбувається навколо.</p>
+                    </article>
+                    <article class="practice-card" id="practice-journal">
+                        <div class="practice-card__visual practice-card__visual--journal" aria-hidden="true"></div>
+                        <h3>Щоденник</h3>
+                        <p>Впорядкуй думки та відстежуй свій стан.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mx-auto my-8 max-w-7xl rounded-2xl border border-purple-100 bg-white p-4 md:my-12 md:p-6 lg:p-8" id="services" aria-labelledby="process-title">
+                <div class="section-heading">
+                    <p class="tag">Просто почати</p>
+                    <h2 class="mb-3 break-words text-2xl font-bold leading-tight text-purple-950 sm:text-3xl lg:text-4xl" id="process-title">Три кроки до тихішого розуму</h2>
+                </div>
+                <ol class="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
+                    <li class="step-card">
+                        <span class="step__number">01</span>
+                        <h3>Обери стан</h3>
+                        <p>Прислухайся до себе й обери те, що відчуваєш зараз.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step__number">02</span>
+                        <h3>Запусти вправу</h3>
+                        <p>Спробуй коротку практику у власному темпі.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step__number">03</span>
+                        <h3>Відстежуй прогрес</h3>
+                        <p>Помічай маленькі зміни та повертайся до практик.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="blog-placeholder min-w-0" id="blog" aria-labelledby="blog-title">
+                <div class="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12 lg:px-8 lg:py-16">
+                    <div class="mb-8 min-w-0 text-center">
+                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-purple-700">
+                            Корисні матеріали
+                        </p>
+                        <h2 class="mb-3 break-words text-2xl font-bold leading-tight text-purple-950 sm:text-3xl lg:text-4xl" id="blog-title">Статті для турботи про себе</h2>
+                    </div>
+                    <div class="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
+                        <article
+                            class="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <img src="assets/images/photo2.jpg" alt="Жінка переживає напружений робочий день"
+                                class="h-56 w-full object-cover">
+                            <div class="flex min-w-0 flex-1 flex-col p-4 md:p-6">
+                                <p class="mb-3 inline-flex self-start rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-800">
+                                    Психологічне благополуччя
+                                </p>
+                                <h3 class="mb-3 break-words text-xl font-bold text-purple-950">Як знизити напругу у складний день</h3>
+                                <p class="mb-6 break-words text-slate-600">
+                                    Коротка пауза допоможе повернути увагу до себе, помітити свої відчуття та обрати практику підтримки.
+                                </p>
+                                <div class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
+                                    <span><i class="fa-regular fa-clock mr-1" aria-hidden="true"></i>4 хв читання</span>
+                                    <span class="break-words">Практичні поради</span>
+                                </div>
+                                <a href="#practice-breathing"
+                                    class="mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-purple-700 px-5 py-3 text-center font-semibold text-white transition-colors hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto">
+                                    Спробувати вправу
+                                    <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <article
+                            class="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <img src="assets/images/photo%206.png" alt="Жінка відпочиває вдома з телефоном та ноутбуком"
+                                class="h-56 w-full object-cover">
+                            <div class="flex min-w-0 flex-1 flex-col p-4 md:p-6">
+                                <p class="mb-3 inline-flex self-start rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-800">
+                                    Відпочинок
+                                </p>
+                                <h3 class="mb-3 break-words text-xl font-bold text-purple-950">Як влаштувати собі коротке перезавантаження</h3>
+                                <p class="mb-6 break-words text-slate-600">
+                                    Навіть кілька хвилин спокою можуть стати турботливою паузою посеред насиченого дня.
+                                </p>
+                                <div class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
+                                    <span><i class="fa-regular fa-clock mr-1" aria-hidden="true"></i>3 хв читання</span>
+                                    <span class="break-words">Ідеї для паузи</span>
+                                </div>
+                                <a href="#practices"
+                                    class="mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-purple-700 px-5 py-3 text-center font-semibold text-white transition-colors hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto">
+                                    Обрати практику
+                                    <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <article
+                            class="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <img src="assets/images/photo%204.jpg" alt="Жінка медитує серед каміння на природі"
+                                class="h-56 w-full object-cover">
+                            <div class="flex min-w-0 flex-1 flex-col p-4 md:p-6">
+                                <p class="mb-3 inline-flex self-start rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-800">
+                                    Усвідомленість
+                                </p>
+                                <h3 class="mb-3 break-words text-xl font-bold text-purple-950">Заземлення: повернення до «тут і зараз»</h3>
+                                <p class="mb-6 break-words text-slate-600">
+                                    Дізнайся, як за допомогою відчуттів помітити опору та зосередитися на навколишньому світі.
+                                </p>
+                                <div class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
+                                    <span><i class="fa-regular fa-clock mr-1" aria-hidden="true"></i>5 хв читання</span>
+                                    <span class="break-words">Практика уважності</span>
+                                </div>
+                                <a href="#practice-grounding"
+                                    class="mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-purple-700 px-5 py-3 text-center font-semibold text-white transition-colors hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto">
+                                    Спробувати вправу
+                                    <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <article
+                            class="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <img src="assets/images/photo%205.jpg" alt="Руки записують думки у блокнот"
+                                class="h-56 w-full object-cover">
+                            <div class="flex min-w-0 flex-1 flex-col p-4 md:p-6">
+                                <p class="mb-3 inline-flex self-start rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-800">
+                                    Самопізнання
+                                </p>
+                                <h3 class="mb-3 break-words text-xl font-bold text-purple-950">Щоденник думок без оцінювання</h3>
+                                <p class="mb-6 break-words text-slate-600">
+                                    Записуй думки та емоції, щоб краще зрозуміти свій стан і побачити, що може підтримати саме тебе.
+                                </p>
+                                <div class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
+                                    <span><i class="fa-regular fa-clock mr-1" aria-hidden="true"></i>4 хв читання</span>
+                                    <span class="break-words">Поради для щоденника</span>
+                                </div>
+                                <a href="#practice-journal"
+                                    class="mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-purple-700 px-5 py-3 text-center font-semibold text-white transition-colors hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto">
+                                    Почати запис
+                                    <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <article
+                            class="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <img src="assets/images/photo%203.jpg" alt="Жінка дихає спокійно, поклавши руки на груди та живіт"
+                                class="h-56 w-full object-cover">
+                            <div class="flex min-w-0 flex-1 flex-col p-4 md:p-6">
+                                <p class="mb-3 inline-flex self-start rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-800">
+                                    Дихальні практики
+                                </p>
+                                <h3 class="mb-3 break-words text-xl font-bold text-purple-950">Дихання як опора в моменті</h3>
+                                <p class="mb-6 break-words text-slate-600">
+                                    Проста увага до вдиху й видиху допоможе сповільнитися та повернутися до теперішнього моменту.
+                                </p>
+                                <div class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
+                                    <span><i class="fa-regular fa-clock mr-1" aria-hidden="true"></i>3 хв читання</span>
+                                    <span class="break-words">Вправи для початку</span>
+                                </div>
+                                <a href="#practice-breathing"
+                                    class="mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-purple-700 px-5 py-3 text-center font-semibold text-white transition-colors hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto">
+                                    До вправи
+                                    <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <article
+                            class="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <img src="assets/images/photo%207.png" alt="Силует людини підіймається сходами до сонячного неба"
+                                class="h-56 w-full object-cover">
+                            <div class="flex min-w-0 flex-1 flex-col p-4 md:p-6">
+                                <p class="mb-3 inline-flex self-start rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-800">
+                                    Турбота про себе
+                                </p>
+                                <h3 class="mb-3 break-words text-xl font-bold text-purple-950">Маленькі кроки до добрішого дня</h3>
+                                <p class="mb-6 break-words text-slate-600">
+                                    Не потрібно змінювати все одразу: помічай власні потреби та обирай одну посильну дію.
+                                </p>
+                                <div class="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
+                                    <span><i class="fa-regular fa-clock mr-1" aria-hidden="true"></i>5 хв читання</span>
+                                    <span class="break-words">Самопідтримка</span>
+                                </div>
+                                <a href="#services"
+                                    class="mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-purple-700 px-5 py-3 text-center font-semibold text-white transition-colors hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 md:w-auto">
+                                    Дізнатися більше
+                                    <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contacts" class="mt-8 min-w-0 border-t border-purple-900 bg-purple-950 px-4 py-8 text-white md:mt-12 md:px-6 md:py-12 lg:px-8 lg:py-16">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                    <div>
+                        <a href="#home"
+                            class="mb-4 inline-flex min-h-11 min-w-0 items-center gap-3 rounded-md text-xl font-bold text-white transition-colors hover:text-purple-200 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2 focus:ring-offset-purple-950">
+                            <img src="assets/icons/Logo.png" alt="" class="h-12 w-12 rounded-full bg-white object-contain">
+                            <span>Calm Mind</span>
+                        </a>
+                        <p class="max-w-xs break-words text-sm leading-6 text-purple-100">
+                            Твій простір турботи про себе. Короткі практики та корисні матеріали допоможуть повернути увагу до власного стану.
+                        </p>
+                    </div>
+
+                    <nav aria-label="Додаткова навігація">
+                        <h2 class="mb-4 break-words text-xl font-bold text-yellow-300 sm:text-2xl md:text-3xl lg:text-4xl">Навігація</h2>
+                        <ul class="space-y-3">
+                            <li><a href="#about" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Про ресурс</a></li>
+                            <li><a href="#blog" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Статті</a></li>
+                            <li><a href="#practices" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Практики</a></li>
+                            <li><a href="#contacts" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Контакти</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav aria-label="Послуги та корисні посилання">
+                        <h2 class="mb-4 break-words text-xl font-bold text-yellow-300 sm:text-2xl md:text-3xl lg:text-4xl">Корисні посилання</h2>
+                        <ul class="space-y-3">
+                            <li><a href="#practice-breathing" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Дихальна вправа</a></li>
+                            <li><a href="#practice-grounding" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Заземлення</a></li>
+                            <li><a href="#practice-journal" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Щоденник думок</a></li>
+                            <li><a href="#services" class="flex min-h-11 items-center break-words rounded-sm text-purple-100 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">Як почати</a></li>
+                        </ul>
+                    </nav>
+
+                    <div>
+                        <h2 class="mb-4 break-words text-xl font-bold text-yellow-300 sm:text-2xl md:text-3xl lg:text-4xl">Контакти та підтримка</h2>
+                        <address class="space-y-3 not-italic text-purple-100">
+                            <p>
+                                <span class="mb-1 block text-sm text-purple-200">Електронна пошта</span>
+                                <a href="mailto:hello@calmmind.example"
+                                    class="inline-flex min-h-11 max-w-full items-center break-all rounded-sm underline decoration-purple-300 underline-offset-4 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                                    hello@calmmind.example
+                                </a>
+                            </p>
+                            <p>
+                                <span class="mb-1 block text-sm text-purple-200">Гаряча лінія</span>
+                                <a href="tel:1547"
+                                    class="inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-yellow-300 px-4 py-2 text-center font-bold text-purple-950 transition-colors hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-950 md:w-auto">
+                                    Зателефонувати: 1547
+                                </a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="mt-10 border-t border-purple-800 pt-6 text-sm text-purple-200">
+                    <p class="break-words">&copy; 2026 Calm Mind. Усі права захищено.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+            menuToggle.setAttribute('aria-label', isExpanded ? 'Відкрити меню' : 'Закрити меню');
+            mobileMenu.classList.toggle('hidden', isExpanded);
+        });
+
+        mobileMenu.addEventListener('click', (event) => {
+            if (event.target.closest('a')) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Відкрити меню');
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
