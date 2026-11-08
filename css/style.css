@@ -98,7 +98,7 @@
 }
 
 body {
-    min-width: 320px;
+    min-width: 0;
     width: 100%;
     color: var(--color-text-main);
     background-color: var(--color-bg-app);
@@ -173,13 +173,13 @@ img {
 }
 
 .site-header__inner {
-    min-height: 100px;
+    min-height: 72px;
 }
 
 .site-header__logo {
-    flex: 0 0 84px;
-    width: 84px;
-    height: 84px;
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
     object-fit: contain;
 }
 
@@ -291,6 +291,16 @@ img {
 }
 
 @media (min-width: 768px) {
+    .site-header__inner {
+        min-height: 100px;
+    }
+
+    .site-header__logo {
+        flex-basis: 84px;
+        width: 84px;
+        height: 84px;
+    }
+
     .hero-section__inner {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         align-items: center;
@@ -553,5 +563,27 @@ img {
     .practices-grid,
     .process__steps {
         grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 360px) {
+    .site-header__logo {
+        flex-basis: 36px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .site-header__inner > a:first-child {
+        gap: 0.25rem;
+    }
+
+    .site-header__inner > a:first-child span {
+        font-size: 0.875rem;
+    }
+
+    .site-header__inner {
+        gap: 0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
     }
 }
